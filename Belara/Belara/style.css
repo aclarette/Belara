@@ -1,0 +1,289 @@
+*{ margin: 0 ;
+box-sizing: border-box;
+scroll-behavior: smooth;
+color: #fff;
+}
+body{
+    background-color: #0b0016;
+}
+#pagina1{
+    height: 94vh;
+    background-image: url(assets/h1_hero1.jpg.webp);
+    background-size: cover;
+    background-color: rgb(0,0,0,0.4);
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+header{height: 10vh;}
+
+header img{
+    margin-top: 4vh;
+    margin-left: 15%;
+    margin-bottom: 2vh;
+    vertical-align: middle;
+}
+#telefone{
+    font-family: "Questrial", sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin-left: 40%;
+    margin-right: 2%;
+    vertical-align: middle;
+}
+
+.quot{
+    background-color: #D6A04C;
+    width: 9%;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    font-family:"Questrial", sans-serif ;
+    font-size: 16px;
+    color: white;
+    margin-top: 1vh;
+    display: inline-block;
+}
+.quot:hover{
+    background: none;
+    border: 1px solid #D6A04C ;
+    color: #D6A04C;
+    transition: 0.5s;
+
+}
+p{
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+    margin-top: 1%;
+   
+}
+.titulo{
+    font-family: "Cabin", sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 2%;
+
+}
+#texto{
+    margin-left: 20%;
+    margin-top: 15%;
+}
+#linha{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    right: 0;
+    display: inline-block;
+    margin-right: 15%;
+    padding-top: 2%;
+}
+
+#linha span{
+    position: relative;
+    z-index: 1;
+    margin: 10px 0;
+    display: table;
+}
+#linha::before{
+    position: absolute;
+    content: "";
+    height: 31px;
+    width: 55px;
+    right: 0;
+    top: 0px;
+    cursor: pointer;
+}
+
+#linha span::after{
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 2px;
+    background-color: #fff;
+    right: 0;
+}
+
+#video{
+    font-family: "Questrial", sans-serif;
+    font-size: 23px;
+    color: #fff;
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 3%;
+}
+#playInterno{
+    background-color: white;
+    color: #D6A04C;
+    border: #D6A04C 2px solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 70%;
+}
+#playInterno a {
+    color: #D6A04C;
+    text-decoration :none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#playInterno:hover{
+    background-color: #D6A04C;
+    color: white;
+    transition: 0.5s;
+    border: #D6A04C 1px solid;
+}
+
+#playInterno:hover a { color: white;}
+
+#playExterno{
+    background-color: rgba(255,255,255, 0.10);
+    width: 120px;
+    height: 120px;
+    border: rgba(255, 255, 255, 0.06) 2px solid;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+}
+#junto{
+    border: rgba(255, 255, 255, 0.06);
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 45%;
+    right: 2%;
+}
+#drop-click { position: absolute;
+color: white;}
+
+#dropdown-click{ 
+    position: absolute;
+    width: 10%;
+    background-color: #111111;
+    list-style: none;
+    padding: 0;
+    opacity: 0;
+    color: white;
+    top: 50px;  
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    right: 0;
+    justify-content: space-between;
+    transition: 0.5s
+}
+
+/*checkbox hidden*/
+#check { 
+position: absolute;
+width: 35px;
+height:35px;
+left: 0;
+}
+
+#check:checked+#dropdown-click  {opacity: 1; }
+
+#quadradoAmarelo{
+    height: 12vh;
+    background-color: #D6A04C;
+    width: 50%;
+    color: #fff;
+    position: absolute;
+    margin-left: 50%;
+    bottom: 0;
+}
+.textoQuadrado{
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 5%;
+    padding: 1%;
+    margin-top: 2%;
+}
+#mouse{
+    margin-left:23%;
+    margin-top: 8%;
+}
+#pagina2{
+    background-color: #0b0016;
+    height: 100vh;
+}
+#elementos{
+    width: 60%;
+    margin: auto;
+}
+#texto2{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 50px;
+    font-family: "Cabin", sans-serif;
+    margin-left: 10%;
+    font-weight: 400;
+}
+
+#esquerda {
+    font-family: "Questrial", sans-serif;
+    display: inline-block;
+    width: 35%;
+    color: #E9E3D9;
+    font-size: 17px;
+    margin-left: 17%;
+    margin-bottom: 5%;
+    font-weight: 400;
+}
+#direita {
+    font-family: "Questrial", sans-serif;
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 10%;
+
+}
+.learn{
+    text-decoration: none;
+    background-color: none;
+    border: 1px solid #D6A04C ;
+    width: 21%;
+    height: 6vh;
+    line-height: 6vh;
+    text-align: center;
+    font-family:"Questrial", sans-serif ;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: block;
+}
+.learn:hover{
+    background-color: #D6A04C;
+    border: 1px solid #D6A04C ;
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+    margin-top: 5%;
+
+}
+#caraLoiroChapeu{
+    margin-top: 5%;
+}
