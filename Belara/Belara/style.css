@@ -1,14 +1,16 @@
 *{ margin: 0 ;
 box-sizing: border-box;
 scroll-behavior: smooth;
-font-family: "Questrial", sans-serif;
+color: #fff;
+font-family: "Questrial", sans-serif; 
 }
+
 body{
     background-color: #0b0016;
 }
 #pagina1{
     height: 94vh;
-    background-image: url(/assets/h1_hero1.jpg.webp);
+    background-image: url(assets/h1_hero1.jpg.webp);
     background-size: cover;
     background-color: rgb(0,0,0,0.4);
     background-blend-mode: multiply;
@@ -33,7 +35,7 @@ header img{
     vertical-align: middle;
 }
 
-#quot{
+.quot{
     background-color: #D6A04C;
     width: 9%;
     height: 5vh;
@@ -45,7 +47,7 @@ header img{
     margin-top: 1vh;
     display: inline-block;
 }
-#quot:hover{
+.quot:hover{
     background: none;
     border: 1px solid #D6A04C ;
     color: #D6A04C;
@@ -195,7 +197,6 @@ height:35px;
 left: 0;
 }
 
-
 #check:checked+#dropdown-click  {opacity: 1; }
 
 #quadradoAmarelo{
@@ -236,7 +237,7 @@ left: 0;
     color: #fff;
     font-size: 50px;
     font-family: "Cabin", sans-serif;
-    margin-left: 10%;
+    margin-left: 15%;
     font-weight: 400;
 }
 
@@ -244,12 +245,11 @@ left: 0;
     font-family: "Questrial", sans-serif;
     display: inline-block;
     width: 35%;
-    color: white;
-    font-size: 17px;
+    color: #E9E3D9;
+    font-size: 15px;
     margin-left: 17%;
     margin-bottom: 5%;
     font-weight: 400;
-    line-height: 1.5;
 }
 #esquerda h1{
     font-weight: normal;
@@ -263,9 +263,8 @@ left: 0;
     font-size: 10px;
     font-weight: 400;
     margin-bottom: 10%;
-    line-height: 1.5;
-}
 
+}
 #direita h1 { font-weight: normal;}
 .learn{
     text-decoration: none;
@@ -278,10 +277,9 @@ left: 0;
     font-family:"Questrial", sans-serif ;
     font-size: 16px;
     color: white;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-top: 5%;
     display: block;
-
 }
 .learn:hover{
     background-color: #D6A04C;
@@ -295,6 +293,22 @@ left: 0;
 #caraLoiroChapeu{
     margin-top: 5%;
 }
+#whatWeDo{
+    width: 70%;
+    margin: auto;
+    font-size: 10px;
+}
+#whatWeDo p {
+     text-transform: uppercase;
+}
+#texto3{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 50px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+}
 .imagem1{
     color: white;
     font-size: 32px;
@@ -302,6 +316,11 @@ left: 0;
     margin-bottom: 12px;
     font-weight: 400;
     display: inline-block;
+    padding: 1%;
+    position: relative;
+    top: 0%;
+    transition: 0.5;
+    overflow: hidden;
 }
 .imagem1 a{
     font-size: 30px;
@@ -310,8 +329,81 @@ left: 0;
     font-family: "Cabin", sans-serif;
 }
 h2{
-   
     font-size: 50px;
     font-family: "Cabin", sans-serif;
     color: #fff;
+}
+
+.imagem1:hover{
+    top: 15px;
+   
+}
+.imagem1:hover a{
+    color: #D6A04C;
+}
+#projects{
+    height: 89,9vh;
+    width: 100%;
+    background-color: #1e1e1e;
+    margin-top: 6%;
+    text-align: center;
+}
+#Carrossel{
+    margin-top: 8%;
+}
+#divTextoTransparente{
+    overflow: hidden;
+    height: 16vh;
+}
+#textoTransparente{
+    font-weight: 500;
+    margin-right: 25%;
+    font-family: "Cabin", sans-serif;
+    font-size: 215px;
+    font-weight: 600;
+    -webkit-text-stroke: 1px #E9E3D9;
+    -webkit-text-fill-color: transparent;
+}
+#quadradoAmareloHover{
+    margin-left: 14.5%;
+    position: absolute;
+    bottom: -276%;
+    background-color: #D6A04C;
+    width: 40%;
+    height: 20vh;
+    text-align: left;
+    padding: 0% 4%;
+    transition: 0.8s;
+}
+#texto3{
+    font-family: "Cabin", sans-serif;
+    font-size: 32px;
+    margin-bottom: 4%;
+}
+
+#quadradoAmareloHover a {
+    text-decoration: none;
+    font-size: 150%;
+    background-color: rgba(255,255,255, 0.10);
+    width: 70px;
+    height: 70px;
+    border: rgba(255, 255, 255, 0.06) 2px solid;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    bottom: 45%;
+    padding-top: 2.8%;
+    text-align: center;
+}
+
+#quadradoAmareloHover:hover{
+    background-color: #272727;
+}
+#quadradoAmareloHover:hover h3{
+    color: #D6A04C;
+}
+
+#quadradoAmareloHover:hover a{
+    background-color: #D6A04C;
 }
